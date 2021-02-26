@@ -1,10 +1,10 @@
 # React & Webpack
 
-Install
-- Clone repository
-- Install dependencies with npm ci
+<h2>Getting Started</h2>
+- Clone repository with <code>git clone https://github.com/vitalii-zamyrailo/reactPack.git</code>
+- Install dependencies with <code>npm ci</code>
 
-Start
-- <b>npm run dev</b> to build app in development mode
-- <b>npm run prod</b> to build app in production mode
-- <b>npm start</b> to run app on server in dev mode
+<h2>Run application</h2>
+- <code>npm run dev</code> to build app in development mode
+- <code>npm run prod</code> to build app in production mode
+- <code>npm start</code> to run app on server in dev mode
