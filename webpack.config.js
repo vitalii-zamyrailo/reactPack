@@ -49,7 +49,6 @@ module.exports = {
 				},
 				vendors: {
 					test: /[\\/]node_modules[\\/](!react)(!react-dom)(!moment)[\\/]/,
-					// name doesn't work?
 				},
 			},
 		},
