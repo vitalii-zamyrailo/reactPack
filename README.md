@@ -1,6 +1,6 @@
 # Webpack & react test repo
 
 - clone repo
-- npm i
+- npm ci
 - npm start
 - localhost:8080
