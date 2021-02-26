@@ -1,4 +1,4 @@
-# React and Webpack
+# React & Webpack
 
 Install
 - Clone repository
