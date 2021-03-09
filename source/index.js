@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 
 import moment from 'moment';
 
+import { square } from './math';
+
 import './style.scss';
 
 const getUsersModule = () => import(/* webpackChunkName: 'usersAPI' */ './common/usersAPI');
@@ -17,6 +19,7 @@ function App() {
 
 	return <section>
 				<span>Date: {moment().format()}</span>
+				<h3>Found {Math.sqrt(square(usersList.length))} users:</h3>
 				<ul>{usersList}</ul>
 				<button onClick={showUsersList}>Fetch users</button>
 			</section>;
