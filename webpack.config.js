@@ -10,7 +10,9 @@ module.exports = {
 	},
 
 	output: {
+		clean: true,
 		path: path.resolve(__dirname, 'build'),
+		filename: '[name].[contenthash].js',
 	},
 
 	module: {
@@ -33,9 +35,11 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'source', 'index.html'),
 		}),
-	],
+],
 
 	optimization: {
+		moduleIds: 'deterministic',
+		runtimeChunk: 'single',
 		splitChunks: {
 			chunks: 'all',
 			cacheGroups: {
@@ -49,6 +53,7 @@ module.exports = {
 				},
 				vendors: {
 					test: /[\\/]node_modules[\\/](!react)(!react-dom)(!moment)[\\/]/,
+					name: 'vendors',
 				},
 			},
 		},

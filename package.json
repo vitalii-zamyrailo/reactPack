@@ -1,6 +1,5 @@
 {
   "name": "webpack-tutorial",
-  "sideEffects": false,
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
@@ -13,6 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "sideEffects": [
+    "**/*.scss"
+  ],
   "devDependencies": {
     "@babel/core": "^7.13.1",
     "@babel/preset-env": "^7.13.5",
