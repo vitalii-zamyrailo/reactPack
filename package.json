@@ -1,12 +1,14 @@
 {
   "name": "webpack-tutorial",
+  "sideEffects": false,
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "startProd": "webpack serve --mode production"
   },
   "keywords": [],
   "author": "",
