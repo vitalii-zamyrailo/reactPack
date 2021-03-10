@@ -1,0 +1,22 @@
+module.exports = {
+	plugins: [],
+	recurseDepth: 10,
+	source: {
+		include: ['./source/'],
+		includePattern: /.+\.js$/,
+		excludePattern: /(^|\/|\\)_/,
+	},
+	sourceType: 'module',
+	tags: {
+		allowUnknownTags: true,
+		dictionaries: ['jsdoc','closure']
+	},
+	templates: {
+		cleverLinks: false,
+		monospaceLinks: false
+	},
+	opts: {
+		destination: './documentation/',
+		recurse: true,
+	},
+};
