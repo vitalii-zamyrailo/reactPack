@@ -23,7 +23,7 @@ module.exports = {
 			},
 			{
 				test: /\.js$/i,
-				use: ['babel-loader'],
+				use: ['cache-loader', 'babel-loader'],
 			},
 		],
 	},
