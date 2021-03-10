@@ -9,4 +9,5 @@
 
 <p><code>npm run dev</code> to build app in development mode</p>
 <p><code>npm run prod</code> to build app in production mode</p>
-<p><code>npm start</code> to run app on server in dev mode</p>
+<p><code>npm start</code> to run app on server in development mode</p>
+<p><code>npm run startProd</code> to run app on server in production mode</p>
