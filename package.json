@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development --config ./webpack/config.js",
-    "prod": "webpack --mode production --config ./webpack/config.js",
+    "build-dev": "webpack --mode development --config ./webpack/config.js",
+    "build-prod": "webpack --mode production --config ./webpack/config.js",
     "start": "webpack serve --mode development --config ./webpack/config.js",
-    "startProd": "webpack serve --mode production --config ./webpack/config.js",
+    "start-prod-server": "webpack serve --mode production --config ./webpack/config.js",
     "gimmeDocs": "./node_modules/.bin/jsdoc -c ./jsdoc-conf.js"
   },
   "keywords": [],

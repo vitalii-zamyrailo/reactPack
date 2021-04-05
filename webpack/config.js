@@ -4,15 +4,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
+const ASSET_PATH = process.env.ASSET_PATH || '/';
+
 module.exports = {
+	devServer: {
+		historyApiFallback: true,
+	},
+
 	entry: {
 		index: path.resolve(__dirname, '../source', 'index.js'),
 	},
 
 	output: {
 		clean: true,
-		path: path.resolve(__dirname, '../build'),
 		filename: '[name].[contenthash].js',
+		path: path.resolve(__dirname, '../build'),
+		publicPath: ASSET_PATH,
 	},
 
 	module: {
@@ -35,6 +42,9 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, '../public', 'index.html'),
 			favicon: path.resolve(__dirname, '../public', 'favicon.ico'),
+		}),
+		new webpack.DefinePlugin({
+			'process.env.ASSET_PATH': JSON.stringify(ASSET_PATH),
 		}),
 ],
 
