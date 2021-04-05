@@ -6,12 +6,12 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 module.exports = {
 	entry: {
-		index: path.resolve(__dirname, 'source', 'index.js'),
+		index: path.resolve(__dirname, '../source', 'index.js'),
 	},
 
 	output: {
 		clean: true,
-		path: path.resolve(__dirname, 'build'),
+		path: path.resolve(__dirname, '../build'),
 		filename: '[name].[contenthash].js',
 	},
 
@@ -33,7 +33,8 @@ module.exports = {
 		new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ua/),
 		new MiniCssExtractPlugin(),
 		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, 'source', 'index.html'),
+			template: path.resolve(__dirname, '../public', 'index.html'),
+			favicon: path.resolve(__dirname, '../public', 'favicon.ico'),
 		}),
 ],
 
