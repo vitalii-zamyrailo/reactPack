@@ -14,3 +14,8 @@
 <p><code>npm start</code> to run app on server in development mode</p>
 <p><code>npm run start-prod-server</code> to run app on server in production mode</p>
 <p><code>npm run gimmeDocs</code> to generate application documentation</p>
+
+<h2>Run application by Docker</h2>
+<p><code>docker build -t react-pack .</code> to build the container image</p>
+<p><code>docker run --rm -d -p 8080:8080 react-pack</code> to run the container</p>
+
